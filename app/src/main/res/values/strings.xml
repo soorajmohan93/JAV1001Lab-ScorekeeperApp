@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">JAV1001Lab-Scorekeeper</string>
+    <string name="Title">Score Board</string>
+    <string name="TeamName1">Team 1</string>
+    <string name="TeamOneReduce">-</string>
+    <string name="TeamOneScore">0</string>
+    <string name="TeamOneIncrease">+</string>
+    <string name="TeamName2">Team2</string>
+    <string name="TeamTwoReduce">-</string>
+    <string name="TeamTwoScore">0</string>
+    <string name="TeamTwoIncrease">+</string>
+    <string name="ScoreOne">1</string>
+    <string name="ScoreTwo">2</string>
+    <string name="ScoreThree">3</string>
+    <string name="ScoreFour">4</string>
+    <string name="ScoreFive">6</string>
+    <string name="ScoringOptions">Cricket Score Options</string>
+</resources>
