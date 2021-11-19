@@ -18,3 +18,4 @@
 
 #V02: Application can perform scorekeeping activities. It includes wicket scoring option now as well. A "NEW MATCH" Button introduced to reset all scores. Bug fixes included in this version
       
+#V03: Styles added to application. App can support Dark mode as well.
