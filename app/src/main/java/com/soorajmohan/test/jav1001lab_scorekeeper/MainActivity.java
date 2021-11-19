@@ -167,8 +167,11 @@ implements View.OnClickListener
             teamTwoDown.setEnabled(teamTwoWicket > 0);
         }
 
-        //if all scores are zero then new game button is disabled
-        newGame.setEnabled(teamOneRun > 0 || teamTwoRun > 0 || teamOneWicket > 0 || teamTwoWicket > 0);
+        //if all scores are zero then new game button is removed. It is shown only during game progress
+        if (teamOneRun > 0 || teamTwoRun > 0 || teamOneWicket > 0 || teamTwoWicket > 0)
+            newGame.setVisibility(View.VISIBLE);
+        else
+            newGame.setVisibility(View.GONE);
 
         //update team one score TextView - getScore method returns the string with run and wicket separated by a "/"
         TextView teamOneScore = findViewById(R.id.TeamOneScore);

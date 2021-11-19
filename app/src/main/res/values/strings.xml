@@ -2,13 +2,10 @@
     <string name="app_name">Cricket ScoreKeeper</string>
     <string name="Title">Score Board</string>
     <string name="TeamName1">Team 1</string>
-    <string name="TeamOneReduce">-</string>
-    <string name="TeamOneScore">0/0</string>
-    <string name="TeamOneIncrease">+</string>
+    <string name="StartScore">0/0</string>
+    <string name="ScoreIncrease">+</string>
     <string name="TeamName2">Team 2</string>
-    <string name="TeamTwoReduce">-</string>
-    <string name="TeamTwoScore">0/0</string>
-    <string name="TeamTwoIncrease">+</string>
+    <string name="ScoreReduce">-</string>
     <string name="ScoreOne">1 Run</string>
     <string name="ScoreTwo">2 Runs</string>
     <string name="ScoreThree">3 Runs</string>

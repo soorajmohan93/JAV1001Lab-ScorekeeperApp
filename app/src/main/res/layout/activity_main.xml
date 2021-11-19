@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,14 +25,10 @@
             <!-- Title of the app-->
             <TextView
                 android:id="@+id/title"
+                style="@style/AllText.TitleStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Title"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="#8D001A77"
-                android:textSize="34sp"
-                android:textStyle="bold"
                 tools:text="@string/Title" />
 
             <!-- Spacing between the title and the team names-->
@@ -55,9 +50,9 @@
 
                 <!--Using vertical linear layouts to arrange team name and score and score control-->
                 <LinearLayout
+                    style="@style/TeamOneBackground"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#F6D5D5"
                     android:orientation="vertical">
 
                     <!--Team one name-->
@@ -66,9 +61,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/TeamName1"
-                        android:textAlignment="center"
-                        android:textAllCaps="true"
-                        android:textSize="20sp"
                         tools:text="@string/TeamName1" />
 
                     <Space
@@ -82,13 +74,11 @@
                         <!-- Score reduce-->
                         <Button
                             android:id="@+id/TeamOneReduce"
+                            style="@style/ButtonStyle.ReduceButton"
                             android:layout_width="48dp"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="#DD3576C6"
-                            android:text="@string/TeamOneReduce"
-                            android:textSize="20sp"
-                            tools:ignore="DuplicateSpeakableTextCheck"
-                            tools:text="@string/TeamOneReduce" />
+                            android:text="@string/ScoreReduce"
+                            tools:text="@string/ScoreReduce" />
                         <!-- Space between score reduce button and score of team one-->
                         <Space
                             android:layout_width="10dp"
@@ -97,12 +87,11 @@
                         <!--Team one score-->
                         <TextView
                             android:id="@+id/TeamOneScore"
+                            style="@style/AllText.ScoreText"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/TeamOneScore"
-                            android:textAlignment="center"
-                            android:textSize="16sp"
-                            tools:text="@string/TeamOneScore" />
+                            android:text="@string/StartScore"
+                            tools:text="@string/StartScore" />
 
                         <!--space between score of team one and score increase button -->
                         <Space
@@ -112,13 +101,11 @@
                         <!--score increase-->
                         <Button
                             android:id="@+id/TeamOneIncrease"
+                            style="@style/ButtonStyle.IncreaseButton"
                             android:layout_width="48dp"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="#DD3576C6"
-                            android:text="@string/TeamOneIncrease"
-                            android:textSize="20sp"
-                            tools:ignore="DuplicateSpeakableTextCheck"
-                            tools:text="@string/TeamOneIncrease" />
+                            android:text="@string/ScoreIncrease"
+                            tools:text="@string/ScoreIncrease" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -130,9 +117,9 @@
 
                 <!--Vertical linear layout to arrange team two name, score controls and score              -->
                 <LinearLayout
+                    style="@style/TeamTwoBackground"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#858BDAEF"
                     android:orientation="vertical">
 
                     <!--Team two name-->
@@ -141,9 +128,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/TeamName2"
-                        android:textAlignment="center"
-                        android:textAllCaps="true"
-                        android:textSize="20sp"
                         tools:text="@string/TeamName2" />
                     <!--Space between team two name and score control & score-->
                     <Space
@@ -157,12 +141,11 @@
                         <!--Score reduce-->
                         <Button
                             android:id="@+id/TeamTwoReduce"
+                            style="@style/ButtonStyle.ReduceButton"
                             android:layout_width="48dp"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="#DD3576C6"
-                            android:text="@string/TeamTwoReduce"
-                            android:textSize="20sp"
-                            tools:text="@string/TeamTwoReduce" />
+                            android:text="@string/ScoreReduce"
+                            tools:text="@string/ScoreReduce" />
                         <!--space between score reduce button and score-->
                         <Space
                             android:layout_width="10dp"
@@ -171,12 +154,11 @@
                         <!--score of team two-->
                         <TextView
                             android:id="@+id/TeamTwoScore"
+                            style="@style/AllText.ScoreText"
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/TeamTwoScore"
-                            android:textAlignment="center"
-                            android:textSize="16sp"
-                            tools:text="@string/TeamTwoScore" />
+                            android:text="@string/StartScore"
+                            tools:text="@string/StartScore" />
                         <!--space between team two score and score increase button-->
                         <Space
                             android:layout_width="10dp"
@@ -185,12 +167,11 @@
                         <!-- score increase-->
                         <Button
                             android:id="@+id/TeamTwoIncrease"
+                            style="@style/ButtonStyle.IncreaseButton"
                             android:layout_width="48dp"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="#DD3576C6"
-                            android:text="@string/TeamTwoIncrease"
-                            android:textSize="20sp"
-                            tools:text="@string/TeamTwoIncrease" />
+                            android:text="@string/ScoreIncrease"
+                            tools:text="@string/ScoreIncrease" />
                     </LinearLayout>
 
 
@@ -213,9 +194,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/ScoringOptions"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textSize="20sp"
                 tools:text="@string/ScoringOptions" />
 
             <!-- horizontal linear layout to centre the radio buttons-->
@@ -240,7 +218,6 @@
                         android:layout_height="wrap_content"
                         android:checked="true"
                         android:text="@string/ScoreOne"
-                        tools:ignore="TextContrastCheck"
                         tools:text="@string/ScoreOne" />
 
                     <RadioButton
@@ -273,6 +250,7 @@
 
                     <RadioButton
                         android:id="@+id/Wicket"
+                        style="@style/AllRadioButtonStyle.RadioButtonWicket"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Wicket" />
@@ -299,9 +277,9 @@
 
                 <Button
                     android:id="@+id/newGame"
+                    style="@style/ButtonStyle.NewGameButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#D0216A18"
                     android:text="@string/newGame"
                     tools:text="@string/newGame" />
 
